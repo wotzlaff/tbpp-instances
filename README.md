@@ -2,10 +2,10 @@
 
 ## Part (A)
 The instances were introduced in [[1]](#1).
-A part of (small instances) are available at <https://github.com/sibirbil/TemporalBinPacking>.
+A part of (small instances) are available at [here](https://github.com/sibirbil/TemporalBinPacking).
 
 ## Part (B)
-The instances are generated from a subset of instances of the Temporal Knapsack Problem (TKP).
+The instances are generated from a subset of instances of the Temporal Knapsack Problem (TKP) and used in [[2]](#2).
 The TKP instances can be found [here](http://or.dei.unibo.it/library).
 
 
