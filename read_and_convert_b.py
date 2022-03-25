@@ -3,7 +3,7 @@ import zipfile
 
 from utils import get_cliques
 
-taus = [5, 15] + list(range(10, 750+1, 10))
+taus = [5, 15] + list(range(10, 200+1, 10)) + list(range(250, 750+1, 50))
 for tau in taus:
     sub = '1' if tau <= 200 else '2'
     os.makedirs(f'data/b{sub}/{tau}', exist_ok=True)
