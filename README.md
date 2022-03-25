@@ -8,6 +8,10 @@ A part of (small instances) are available at [here](https://github.com/sibirbil/
 The instances are generated from a subset of instances of the Temporal Knapsack Problem (TKP) and used in [[2]](#2).
 The TKP instances can be found [here](http://or.dei.unibo.it/library).
 
+## Format
+An instance is represented by a list of items (jobs) and a bin (server) capacity.
+The first row of each file summarizes the number of items and the capacity.
+Each subsequent row represents one item (item index, starting time, ending time, item size).
 
 ## References
 
