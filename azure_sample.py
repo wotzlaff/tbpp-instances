@@ -29,16 +29,16 @@ def main():
     os.makedirs('data/d2', exist_ok=True)
 
     data_subs = [
-        (k, data[(data['d'] >= 24 / k * 60) & (data['d'] < 24 * 60)])
-        for k in [2, 4, 8, 24]
+        (tau, data[(data['d'] >= 24 / tau * 60) & (data['d'] < 24 * 60)])
+        for tau in [2, 4, 8, 24]
     ] + [('inf', data[data['d'] < 24 * 60])]
-    for k, data_sub in data_subs:
+    for tau, data_sub in data_subs:
         for sample in range(10):
             idx = rng.permutation(data_sub.index)
             for n in ns:
                 idx0 = sorted(idx[:n])
                 c = '1' if n <= 1000 else '2'
-                filename = f'data/d{c}/{n}_{k}_{sample+1}.txt'
+                filename = f'data/d{c}/{n}_{tau}_{sample+1}.txt'
                 write_file(
                     data_sub.loc[idx0].reset_index(drop=True),
                     100,
