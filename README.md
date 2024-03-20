@@ -16,8 +16,8 @@ The instances were introduced in [[3]](#3) for a temporal bin packing problem in
 The set of instances is derived from real-world VM traces originally introduced in [[4]](#4) and published [here](https://github.com/Azure/AzurePublicDataset).
 In order to generate suitable instances, we only consider one capacity constraint given by the maximum CPU usage (over all possible machines) per job (VM).
 Moreover, we exclude all jobs running in the whole time interval of 14 days or having a resource demand smaller than 0.25 or at least 0.75.
-The subset selection is handled in <azure_from_database.py> which uses the SQLite database published through the repository mentioned above.
-Details of the sampling method can be found in <azure_sample.py>.
+The subset selection is handled in [azure_from_database.py](azure_from_database.py) which uses the SQLite database published through the repository mentioned above.
+Details of the sampling method can be found in [azure_sample.py](azure_sample.py).
 
 ## Format
 An instance is represented by a list of items (jobs) and a bin (server) capacity.
